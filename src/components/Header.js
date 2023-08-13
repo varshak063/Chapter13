@@ -12,7 +12,7 @@ export const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   // suscribing to store using Selector Hook
   const cartCount = useSelector((store) => store.cart.items);
-  console.log(cartCount);
+  // console.log(cartCount);
   return (
     <>
       <div className="flex justify-between items-center bg-pink-100 mb shadow-lg px-4">
@@ -35,7 +35,7 @@ export const Header = () => {
             <Link to="/about">
               <li className="m-2">About Us</li>
             </Link>
-            <Link>
+            <Link to="/contact">
               <li className="m-2">Contact Us</li>
             </Link>
             <Link to="/grocery">
@@ -47,6 +47,7 @@ export const Header = () => {
               </li>
             </Link>
             <button
+              type="button"
               className="m-2"
               onClick={() => {
                 isLoggedIn === "Login"

@@ -14,6 +14,7 @@ export const CategoryItemList = ({ items }) => {
       <div>
         {items.map((item) => (
           <div
+            data-testid="retroMenusList"
             key={item?.card?.info?.id}
             className=" py-3 border-b-2 text-left flex align-baseline"
           >
@@ -33,7 +34,7 @@ export const CategoryItemList = ({ items }) => {
             </div>
             <div className="w-3/12 p-2">
               <div className="absolute m-1">
-                <button
+                <button data-testid="addButton"
                   className="bg-white m-auto p-1 rounded-sm text-sm font-semibold"
                   onClick={
                     () => handleItemAddCart(item)

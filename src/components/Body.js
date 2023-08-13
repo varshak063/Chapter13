@@ -45,6 +45,7 @@ export const Body = () => {
             class="rounded-l-lg placeholder:italic placeholder:text-slate-400 block bg-white w-100 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
             type="text"
             name="Search"
+            data-testid="searchId"
             placeholder="Search..."
             value={searchTextVariable}
             onChange={(e) => {
@@ -66,6 +67,7 @@ export const Body = () => {
             Search
           </button>
           <button
+            data-testid="topRated"
             className="px-4 py-2 ml-4 bg-gray-100"
             onClick={() => {
               //Filter logic here

@@ -11,7 +11,7 @@ export const CartPage = () => {
   };
   return (
     <>
-      <div className="font-semibold m-4 p-4 m-auto text-center">
+      <div className="font-semibold p-4 m-auto text-center">
         <h1 className="text-2xl ">Cart Items</h1>
         <div className="m-auto w-6/12">
           <button
